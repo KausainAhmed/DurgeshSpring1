@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean name="emp1" class="durgesh.spring.collection.Emp">
+		<property name="name" value="Alexis Texas" />
+		<property name="phones">
+			<list>
+				<value>2233</value>
+				<value>1122</value>
+				<value>3344</value>
+				<value>4455</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Delhi</value>
+				<value>Punjab</value>
+				<value>Mumbai</value>
+				<value>null</value>
+				<value>Delhi</value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="101" value="Java" />
+				<entry key="102" value="Python" />
+				<entry key="103" value="R" />
+				<entry key="104" value="Pearl" />
+			</map>
+		</property>
+
+		<property name="props">
+		<props>
+		<prop key="learn">Java</prop>
+		<prop key="hello">World</prop>
+		</props>
+		</property>
+
+	</bean>
+</beans>
